@@ -5,6 +5,11 @@ Base styles
 ------------------------*/
 
 
+.tab 
+{ 
+	text-align: right;
+}
+
 
 body
 {
@@ -237,6 +242,11 @@ Single styles
 img.resize {
   width:175px;
   height:275px;
+}
+
+img.resizeTiny {
+  width:50px;
+  height:35px;
 }
 
 

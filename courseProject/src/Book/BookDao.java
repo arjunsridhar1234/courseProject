@@ -11,6 +11,4 @@ public interface BookDao {
 	 */
 	//public Book validateBook(String title);
 	
-
-	
 }

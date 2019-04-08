@@ -19,14 +19,13 @@ public class BookDaoImpl implements BookDao{
 	try {
 		
 		conn = db.getConnection();
-		ps = conn.prepareStatement("insert into books values(?,?,?)");
+		ps = conn.prepareStatement("insert into books values(?,?,?,?,?)");
 		
 		ps.setString(1, b.getTitle());
 		ps.setString(2, b.getAuthor());
 		ps.setString(3, b.getISBN());
-		ps.setString(5, b.getLink());
-			
 		//	ps.setDouble(4, b.getPrice());
+		ps.setString(5, b.getLink());
 		
 		status = ps.executeUpdate();
 	
